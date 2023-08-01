@@ -1,0 +1,172 @@
+/* #cart-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+#cart-container .menu-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+#cart-container .cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#cart-container .product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+#cart-container .product-details {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+#cart-container .product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#cart-container .product-price {
+  font-size: 14px;
+  color: #888;
+}
+
+#cart-container .quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#cart-container .checkout-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  left: 1000px;
+} */
+
+
+
+
+
+
+
+#cart-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin: 0 auto; /* Center the container */
+  max-width: 70%; /* Set a maximum width for the container */
+  margin-top: 5%;
+}
+
+#cart-container .menu-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  padding-left: 110px;
+  background-color: #eaeaea;
+  font-weight: bold;
+  font-size: 20px;
+  color: #cf602e;
+
+  font-family: "Quicksand", sans-serif;
+
+}
+
+#cart-container .menu-item {
+  display: flex;
+  justify-content: center;
+  justify-items: end;
+}
+
+#cart-container .cart-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin: 10px;
+}
+
+#cart-container .product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#cart-container .product-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: baseline;
+  font-size: 15px;
+
+  
+}
+
+#cart-container .product-name {
+  font-family: "Quicksand", sans-serif;
+
+}
+
+#cart-container .product-price{
+font-weight: bold;
+font-family: "Quicksand", sans-serif;
+font-size: 1.0rem;
+
+
+}
+
+#cart-container button {
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  
+  
+
+}
+
+#cart-container .checkout-button {
+  padding: 10px;
+  background-color: #cf602e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 80%;
+  margin-top: 2%;
+}
+
+
+#cart-container .total{
+  color: #cf602e;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 85%;
+  font-size: 1.2rem;
+
+}
+.quantity {
+  font-size: 1.2rem;
+}
+

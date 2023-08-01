@@ -1,0 +1,54 @@
+#payment-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 100px;
+  }
+  
+  #payment-container h2 {
+    margin-top: 0;
+  }
+  
+  #payment-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #payment-container input[type='text'] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  #payment-container button {
+    padding: 10px 20px;
+    background-color: #cf602e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  #payment-container button:last-child {
+    margin-right: 0;
+  }
+  
+  #payment-container button:hover {
+    background-color: #cf602e;
+  }
+  
+  #payment-container .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+
+
+
+  

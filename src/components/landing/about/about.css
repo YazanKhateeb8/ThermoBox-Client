@@ -1,0 +1,91 @@
+#about-container {
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 80px;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .landing-pic {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .about-title-header {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .about-text {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  .card-home {
+    margin-top: 5%;
+    width: 80%;
+    height: 500px;
+    border-radius: 30px;
+    background: #dbd6d6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+                0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #fa934f;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}

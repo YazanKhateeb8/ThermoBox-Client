@@ -1,0 +1,79 @@
+/* Add these styles to your CSS file */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-confirm .close-button {
+  background-color: #cf602e; /* Orange-red button color */
+  color: #FFF;
+  border: none;
+  margin-top: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+
+}
+
+.close-button:hover {
+  background-color: #E63900; /* Darker shade on hover */
+}
+
+
+
+
+
+
+.card-confirm {
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card-confirm:hover {
+  border: 5px solid rgb(207, 89, 10);
+  transform: scale(1);
+}
+
+
+
+.card-confirm h2{
+  padding-top: 50px;
+
+}
+
+
+.card-confirm p {
+
+  padding-top: 30px;
+}

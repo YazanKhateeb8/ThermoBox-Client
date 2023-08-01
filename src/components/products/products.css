@@ -1,0 +1,211 @@
+/* General Styles */
+#products-container {
+  display: grid;
+  grid-template-columns: 22% auto; /* Two columns: sidebar and product-row */
+  gap: 20px; /* Gap between columns */
+}
+
+/* Sidebar Styles */
+#products-container .side-bar-category {
+  position:absolute; /* Fixed position */
+  padding: 40px;
+  background-image: linear-gradient(163deg, #cf602e 0%, #1e375e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 67px;
+  height: 75%;
+  width: 12%;
+  margin-left: 2%;
+  margin-top: 2%;
+
+}
+
+/* Product Row Styles */
+#products-container .product-rows {
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three products in each line */
+  gap: 20px; /* Gap between products */
+  margin-left: 500px; /* Adjust the margin to provide space for the sidebar */
+  row-gap: 30px;
+  column-gap: 100px;
+}
+
+
+
+#products-container .feature-products { 
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Three products in each line */
+  margin-left: 450px;
+}
+/* Product Item Styles */
+#products-container .productt-item {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+}
+
+
+
+/* Product Name Styles */
+#products-container .product-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+
+/* Product Image Styles */
+
+#products-container .product-image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+
+#products-container .card-footer {
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Product Details Styles */
+#products-container .product-details {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  flex-direction: row;
+}
+
+/* Product Price Styles */
+#products-container .product-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  transition: opacity 0.3s ease;
+}
+
+/* Product Rating Styles */
+#products-container .product-rating {
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+#products-container .view-product {
+  margin-top: 20px;
+  margin-left: 80px;
+  transition: opacity 0.3s ease;
+  background-color: #d4d6df;
+  color: #000000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#products-container .add-cart-button {
+  margin-top: 5px;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+
+
+
+/* Back Button Styles */
+#products-container .btn-back {
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #333333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 150px;
+}
+
+#products-container .btn-back:hover {
+  background-color: #cf602e;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #products-container {
+    grid-template-columns: 100%; /* Single column layout */
+  }
+
+  /* Adjust the sidebar width for small screens */
+  #products-container .side-bar-category {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Adjust the product row margin for small screens */
+  #products-container .product-rows {
+    margin-left: 0;
+  }
+}
+
+/* For screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+  #products-container {
+    grid-template-columns: 100%; /* Single column layout */
+  }
+
+  /* Adjust the sidebar width for small screens */
+  #products-container .side-bar-category {
+    width: 20%;
+    margin: 0;
+  }
+
+  /* Adjust the product row margin for small screens */
+  #products-container .product-rows {
+    margin-left: 0;
+  }
+}
+
+/* For screens with a maximum width of 480px (typical mobile phone size) */
+@media (max-width: 480px) {
+  #products-container {
+    grid-template-columns: 100%; /* Single column layout */
+  }
+
+  /* Adjust the sidebar width for small screens */
+  #products-container .side-bar-category {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Adjust the product row margin for small screens */
+  #products-container .product-rows {
+    margin-left: 0;
+  }}
+
+
+

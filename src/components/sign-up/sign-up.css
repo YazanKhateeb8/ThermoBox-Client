@@ -1,0 +1,118 @@
+#sign-up-container{
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px 30px 60px;
+    border-radius: 80px;
+    width: max-content;
+    height: max-content;
+    box-shadow: 0px 10px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+#sign-up-container p{
+    margin: 0;
+    font-weight: bold;
+}
+
+
+#sign-up-container .title-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 20px 0;
+}
+#sign-up-container .title-container .text{
+    text-decoration: underline;
+    margin: 0;
+    font-size: 1.5rem;
+}
+#sign-up-container .title-container .logo{
+    width: 30px;
+}
+
+#sign-up-container #form-container button{
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 1.05rem;
+    font-weight: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 45px;
+}
+
+#sign-up-container #form-container button:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+    filter: brightness(85%);
+}
+
+#sign-up-container #form-container .email-btn{
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#sign-up-container #form-container .email-btn:hover{
+    border: 1px solid;
+}
+
+#sign-up-container button img{
+    width: 20px;
+}
+
+
+
+#sign-up-container .auth-toggle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#sign-up-container .auth-toggle button{
+    font-size: 1.1rem;
+    padding: 0;
+    color: #0d47a1;
+    border: none;
+    width: max-content;
+    height: max-content;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#sign-up-container .auth-toggle button:hover{
+    cursor: pointer;
+    color: #1a237e;
+
+}
+
+
+#form-container form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#form-container form .row{
+    display: flex;
+    gap: 7px;
+}
+
+
+#sign-up-container .checkbox-container{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 550px){
+    #sign-up-container{
+        padding: 0 20px 10px 20px;
+    }
+    
+}
